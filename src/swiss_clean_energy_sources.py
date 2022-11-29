@@ -119,7 +119,7 @@ else:
     elif project_num == 'less than 1000':
         reduced_df = sources_per_canton[(sources_per_canton['canton_name'] == chosen_canton_name) & (sources_per_canton['projects'] < 1000)]
     elif project_num == 'from 1000 to less than 2000':
-        reduced_df = sources_per_canton[(sources_per_canton['canton_name'] == chosen_canton_name) & (sources_per_canton['projects'] >= 1000) & (reduced_df['projects'] < 2000)]
+        reduced_df = sources_per_canton[(sources_per_canton['canton_name'] == chosen_canton_name) & (sources_per_canton['projects'] >= 1000) & (sources_per_canton['projects'] < 2000)]
     else:
         reduced_df = sources_per_canton[(sources_per_canton['canton_name'] == chosen_canton_name) & (sources_per_canton['projects'] >= 2000)]
 
