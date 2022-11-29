@@ -2,9 +2,9 @@
 import pandas as pd
 
 # matplotlib
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib as mpl
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 #plotly
 import plotly.express as px
@@ -35,7 +35,7 @@ df = deepcopy(df_raw)
 #geo_df_raw = pd.read_json('./data/raw/georef-switzerland-kanton.geojson')
 with open("./data/raw/georef-switzerland-kanton.geojson") as response:
     geo_df_raw = json.load(response)
-geo_df = deepcopy(geo_df_raw)
+#geo_df = deepcopy(geo_df_raw) # We don't need this
 
 
 
@@ -48,7 +48,19 @@ if st.sidebar.checkbox("Show DataFrame", value=True):
     st.text('Renewable Power Plants in Switzerland')
     st.dataframe(data=df)
     st.text('Swiss Geographic Kanton Data')
-    st.dataframe(data=geo_df)
+    #
+    # Note: GeoJson data cannot be displayed now! (but it worked before!??)
+    #
+    #st.dataframe(data=geo_df)
+    # st.dataframe(
+    #     pd.DataFrame(
+    #         {
+    #             "first column": [None, '2', 3, 4],
+    #             "second column": [10, 20, 30, 40],
+    #         }
+    #     )
+    # )
+    #st.dataframe(data=geo_df_raw)
 
 
 
