@@ -5,8 +5,13 @@ example image:
 
 ![alternative text](reports/img/pic01.jpg)
 
+# Link to:
+- [Swiss Clean Energy Sources analys](https://cuongmits-sample-streamlit-srcswiss-clean-energy-sources-qmtj00.streamlit.app/)
+- [MPG Data exploration](https://cuongmits-sample-streamlit-app-srcmpg-data-exploration-fr6983.streamlit.app/)
+- [Eletion & Unemployment Rate exploration](https://cuongmits-sa-srcelection-n-unemployment-rate-exploration-ufxnlo.streamlit.app/)
 
-#### -- Project Status: [Active, On-Hold, Completed]
+
+#### -- Project Status: [Completed]
 
 ## Project Intro/Objective
 The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
