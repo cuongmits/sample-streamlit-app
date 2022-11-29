@@ -47,7 +47,7 @@ if st.sidebar.checkbox("Show DataFrame", value=True):
     st.subheader("Dataset")
     st.text('Renewable Power Plants in Switzerland')
     st.dataframe(data=df)
-    st.text('Swiss Geographic Kanton Data')
+    #st.text('Swiss Geographic Kanton Data')
     #
     # Note: GeoJson data cannot be displayed now! (but it worked before!??)
     #

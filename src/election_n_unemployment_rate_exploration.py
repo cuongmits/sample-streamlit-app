@@ -29,8 +29,8 @@ df = deepcopy(ds)
 if st.sidebar.checkbox("Show DataFrame", key=1, value=False): # <<< key is used for multi checkboxes with the same label!
     st.subheader("Election Dataset")
     st.dataframe(data=df)
-    st.subheader("District Geography Data")
-    st.dataframe(data=deepcopy(geojson))
+    #st.subheader("District Geography Data")
+    #st.dataframe(data=deepcopy(geojson))
 
 fig = px.choropleth_mapbox( #we also can use px.choropleth() for a world map (geoJSON file not required!)
     ds, 
@@ -61,8 +61,8 @@ df2 = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips
 if st.sidebar.checkbox("Show DataFrame", key=2, value=False):
     st.subheader("Unemployment Rate Dataset")
     st.dataframe(data=df2)
-    st.subheader("County Geography Data")
-    st.dataframe(data=deepcopy(counties))
+    #st.subheader("County Geography Data")
+    #st.dataframe(data=deepcopy(counties))
 
 fig2 = go.Figure(
     go.Choroplethmapbox(

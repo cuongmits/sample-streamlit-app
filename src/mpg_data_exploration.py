@@ -97,7 +97,7 @@ else: # then display in Plotly
     p_fig = px.scatter(
         reduced_df, x='displ', y='hwy', opacity=0.5,
         range_x=[1, 8], range_y=[10, 50],
-        width=1000, height=800,
+        width=800, height=600,
         labels={'displ': 'Displacement (Liters)', 'hwy': 'MPG'},
         title='Engine Size vs Highway Fuel Mileage',
         hover_data=['manufacturer', 'model'], ### how to add html elements & styling?
