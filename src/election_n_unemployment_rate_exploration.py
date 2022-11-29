@@ -32,7 +32,7 @@ if st.sidebar.checkbox("Show DataFrame", key=1, value=False): # <<< key is used 
     st.subheader("District Geography Data")
     st.dataframe(data=deepcopy(geojson))
 
-fig = px.choropleth_mapbox(
+fig = px.choropleth_mapbox( #we also can use px.choropleth() for a world map (geoJSON file not required!)
     ds, 
     geojson=geojson, 
     color="winner",
