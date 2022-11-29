@@ -18,6 +18,8 @@ from copy import deepcopy
 import json
 
 # st.sidebar.header("Election Exploration")
+# 4. Add a suitable title to your app.
+st.sidebar.title("Plotting using Streamlit") # this can be added anywhere!
 st.header("Clean Energy Sources in Switzerland")
 
 ##### Load data
@@ -55,6 +57,8 @@ if st.sidebar.checkbox("Show DataFrame", value=True):
 
 # Add “All” option to this dropdown.
 ##### Plotting
+
+st.subheader("Plotting")
 
 ## to match Canton code (in df) to Canton name (in geo_df)
 cantons_dict = {'TG':'Thurgau', 'GR':'Graubünden', 'LU':'Luzern', 'BE':'Bern', 'VS':'Valais', 
@@ -148,11 +152,6 @@ fig2.update_traces(
     marker=dict(size=12, line=dict(width=2,color='red')),
     selector=dict(mode='markers'))
 st.plotly_chart(fig2)
-
-
-
-# 4. Add a suitable title to your app.
-st.sidebar.title("Plotting using Streamlit") # this can be added anywhere!
 
 
 # 5. Further customize your app as you like (e.g. add a sidebar, split the page into columns, add text, etc.).
